@@ -114,7 +114,7 @@ def paginate():
         pg_nums : int
             Number of pages scraped
     """
-    pg_nums = 1100
+    pg_nums = 1
     while True:
         try:
             print(_base_url.format(pg_nums))
