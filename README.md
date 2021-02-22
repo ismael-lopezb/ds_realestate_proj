@@ -35,3 +35,41 @@ After scraping the data, I needed to clean it up so that it was usable for our m
   * Roof garden
 ## Exploratory data analysis
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the data.
+Distribution of the price: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png "Distribution")
+Correlation matrix: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg "Matrix")
+Median Price by Delegacion: 
+|             Delegacion | Price (MP) |
+|-----------------------:|:----------:|
+|         Miguel Hidalgo |  14.000000 |
+|  Cuajimalpa de Morelos |  12.900000 |
+| La Magdalena Contreras |   6.000000 |
+|         Alvaro Obregón |   5.750000 |
+|             Cuauhtémoc |   5.149000 |
+|                Tlalpan |   4.400000 |
+|          Benito Juárez |   4.350000 |
+|               Coyoacán |   3.090000 |
+|           Azcapotzalco |   1.800000 |
+|      Gustavo A. Madero |   1.690000 |
+|              Iztacalco |   1.380000 |
+|    Venustiano Carranza |   1.215000 |
+|             Iztapalapa |   0.610000 |
+|                Tláhuac |   0.520460 |
+|             Xochimilco |   0.413149 |
+
+![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricepd.png "precio por delegacion")
+The more expensive Colonias: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcnl.png "Precio nlargest")
+The cheapest Colonias: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcns.png "Precio nsmallest")
+## Model Building
+First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%
+I tried four different models and evaluated them using Root Mean Squared Error. 
+I tried four different models:
+* **Multiple Linear Regression** – Baseline for the model
+* **Ridge Regression** - Because of the sparse data from the many categorical variables
+* **Lasso Regression** - An alternative to Ridge Regression
+* **Gradient Boosting Regressor** - Again, with the sparsity associated with the data, I thought that this would be a good fit.
+## Model performance
+The Gradient Boosting Regressor model far outperformed the other approaches on the test and validation sets.
+* **Gradient Boosting Regressor:** RMSE = 0.4545
+* **Ridge Regression:** RMSE = 0.5418
+* **Multiple Linear Regression:** RMSE = 0.5419
+* **Lasso Regression:** was discarded because it had a MSE=0.999
