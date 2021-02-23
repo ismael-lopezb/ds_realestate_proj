@@ -4,9 +4,9 @@
 * Engineered features from the text of each apartment description to quantify the value of amenities, such as pool, garden, etc.
 * Optimized Linear, Ridge, and Gradient Boosting Regressor using GridsearchCV to reach the best model.
 ## Code and Resources Used
-**Python Version:** 3.8.5
-**Pckages:** pandas, numpy, sklearn, matplotlib, seaborn, statistics, BeautifulSoup
-**Scraper Github:** https://github.com/jorgeviz/depcdmx/tree/master/scrapers
+* **Python Version:** 3.8.5
+* **Pckages:** pandas, numpy, sklearn, matplotlib, seaborn, statistics, BeautifulSoup
+* **Scraper Github:** https://github.com/jorgeviz/depcdmx/tree/master/scrapers
 ## Web Scraping
 Tweaked the web scraper github repo (above) to scrape 25,000 apartment postings from inmueble24.com. With each apartment, we got the following:
 * Name
@@ -35,8 +35,10 @@ After scraping the data, I needed to clean it up so that it was usable for our m
   * Roof garden
 ## Exploratory data analysis
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the data.
-Distribution of the price: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png "Distribution")
-Correlation matrix: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg "Matrix")
+Price distribution: 
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png" alt="Price Distribution" width="300" height="300"/> 
+Correlation matrix:
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg" alt="Correlation matrix" width="300" height="300"/>
 Median Price by Delegacion: 
 |             Delegacion | Price (MP) |
 |-----------------------:|:----------:|
@@ -56,9 +58,11 @@ Median Price by Delegacion:
 |                Tláhuac |   0.520460 |
 |             Xochimilco |   0.413149 |
 
-![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricepd.png "precio por delegacion")
-The more expensive Colonias: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcnl.png "Precio nlargest")
-The cheapest Colonias: ![alt text](https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcns.png "Precio nsmallest")
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricepd.png" alt="Price by Delegacion" width="500" height="500"/>
+The more expensive Colonias:
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcnl.png" alt="Price nlargest" width="300" height="300"/>
+The cheapest Colonias: 
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcns.png" alt="Price nsmallest" width="300" height="300"/>
 ## Model Building
 First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%
 I tried four different models and evaluated them using Root Mean Squared Error. 
