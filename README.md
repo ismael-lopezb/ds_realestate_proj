@@ -8,7 +8,7 @@
 **Pckages:** pandas, numpy, sklearn, matplotlib, seaborn, statistics, BeautifulSoup
 **Scraper Github:** https://github.com/jorgeviz/depcdmx/tree/master/scrapers
 ## Web Scraping
-Tweaked the web scraper github repo (above) to scrape 25,000 apartment postings from inmueble24.com. With each job, we got the following:
+Tweaked the web scraper github repo (above) to scrape 25,000 apartment postings from inmueble24.com. With each apartment, we got the following:
 * Name
 * Location
 * Description 
