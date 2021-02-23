@@ -35,10 +35,15 @@ After scraping the data, I needed to clean it up so that it was usable for our m
   * Roof garden
 ## Exploratory data analysis
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the data.
+
 Price distribution: 
+
 <img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png" alt="Price Distribution" width="400" height="400"/> 
+
 Correlation matrix:
+
 <img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg" alt="Correlation matrix" width="400" height="400"/>
+
 Median Price by Delegacion: 
 |             Delegacion | Price (MP) |
 |-----------------------:|:----------:|
@@ -59,9 +64,13 @@ Median Price by Delegacion:
 |             Xochimilco |   0.413149 |
 
 <img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricepd.png" alt="Price by Delegacion" width="500" height="500"/>
+
 The more expensive Colonias:
+
 <img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcnl.png" alt="Price nlargest" width="300" height="300"/>
+
 The cheapest Colonias: 
+
 <img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcns.png" alt="Price nsmallest" width="300" height="300"/>
 
 ## Model Building
