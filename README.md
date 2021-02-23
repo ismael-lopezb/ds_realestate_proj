@@ -36,9 +36,9 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 ## Exploratory data analysis
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the data.
 Price distribution: 
-<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png" alt="Price Distribution" width="300" height="300"/> 
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png" alt="Price Distribution" width="400" height="400"/> 
 Correlation matrix:
-<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg" alt="Correlation matrix" width="300" height="300"/>
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg" alt="Correlation matrix" width="400" height="400"/>
 Median Price by Delegacion: 
 |             Delegacion | Price (MP) |
 |-----------------------:|:----------:|
@@ -63,6 +63,7 @@ The more expensive Colonias:
 <img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcnl.png" alt="Price nlargest" width="300" height="300"/>
 The cheapest Colonias: 
 <img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcns.png" alt="Price nsmallest" width="300" height="300"/>
+
 ## Model Building
 First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%
 I tried four different models and evaluated them using Root Mean Squared Error. 
