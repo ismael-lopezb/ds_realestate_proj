@@ -27,10 +27,10 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 * Added a column of divisa to convert prices in USD to MXN
 * Added the column Delegacion
 * Extracted amenities from description column:
-  * gym, 
-  * pool, 
-  * pet fiendly
-  * garage
+  * Gym 
+  * Pool 
+  * Pet fiendly
+  * Garage
   * Elevator
   * Roof garden
 ## Exploratory data analysis
