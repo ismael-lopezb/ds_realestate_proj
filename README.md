@@ -38,11 +38,11 @@ I looked at the distributions of the data and the value counts for the various c
 
 Price distribution: 
 
-<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png" alt="Price Distribution" width="400" height="400"/> 
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/distri.png" alt="Price Distribution" width="500" height="500"/> 
 
 Correlation matrix:
 
-<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg" alt="Correlation matrix" width="400" height="400"/>
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/heatmap.jpg" alt="Correlation matrix" width="500" height="500"/>
 
 Median Price by Delegacion: 
 |             Delegacion | Price (MP) |
@@ -67,11 +67,11 @@ Median Price by Delegacion:
 
 The more expensive Colonias:
 
-<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcnl.png" alt="Price nlargest" width="300" height="300"/>
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcnl.png" alt="Price nlargest" width="500" height="500"/>
 
 The cheapest Colonias: 
 
-<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcns.png" alt="Price nsmallest" width="300" height="300"/>
+<img src="https://github.com/ismael-lopezb/ds_realestate_proj/blob/master/pricebcns.png" alt="Price nsmallest" width="500" height="500"/>
 
 ## Model Building
 First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%
