@@ -6,6 +6,9 @@ Created on Sat Jun 20 12:51:18 2020
 @author: ismael
 """
 
+"""
+Fist we import librries
+"""
 import pandas as pd
 import numpy as np
 #make a dataframe
