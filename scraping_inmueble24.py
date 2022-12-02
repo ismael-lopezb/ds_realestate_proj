@@ -34,7 +34,7 @@ _operation = 'venta'
 _base_url = _root + "departamentos-en-" + _operation + "-en-" + _state + "-pagina-{}.html"
 #user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36"
 user_agent = "Mozilla/5.0"
-ddir = '/Users/ismaellopezbahena/Data Science/Projects/ds_realestate_proj'
+ddir = 'ds_realestate_proj/data/'
 
 
 def save(depts):
